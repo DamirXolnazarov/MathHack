@@ -10,7 +10,6 @@
     <input class="input" type="text" v-model="boluvchi" placeholder="boluvchi"><br>
     <button class="input" @click="qoldiq">click</button><br>
     <span class="input">qoldiq: {{ this.qoldi }}</span><br>
-    <span class="input">bolinma: {{ this.bolinma }}</span><br>
   </div>
 </template>
 <script>
@@ -31,7 +30,6 @@ export default {
     qoldiq(){
       this.umu = Math.pow(this.son, this.daraja)
       this.qoldi = this.umu % this.boluvchi
-      this.bolinma = Math.floor(this.umu/this.boluvchi)
     }
   },
 }
